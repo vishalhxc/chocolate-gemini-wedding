@@ -1,0 +1,19 @@
+{
+  "name": "chocolate-gemini-wedding",
+  "version": "1.0.0",
+  "description": "website for the wedding of Vishal and DeYandre",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "css-build": "node-sass --omit-source-map-url src/styles/site.scss src/styles/site.css",
+    "css-watch": "npm run css-build -- --watch",
+    "start": "npm run css-watch"
+    },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "bulma": "^0.9.2",
+    "node-sass": "^5.0.0"
+  },
+  "dependencies": {}
+}
