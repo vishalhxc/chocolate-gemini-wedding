@@ -1,7 +1,7 @@
 {
   "name": "chocolate-gemini-wedding",
   "version": "1.0.0",
-  "description": "website for the wedding of Vishal and DeYandre",
+  "description": "website for the wedding of Vishal and DeYandre.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
