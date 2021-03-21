@@ -1,0 +1,48 @@
+@import "../node_modules/bulma/bulma.sass";
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&family=Source+Sans+Pro:ital@1&display=swap');
+
+$white: #FFFFFF;
+$black: #1f1f1f;
+
+$primary: #9f98e8;
+$secondary: #aff6cf;
+
+body, html {
+    height: 100%;
+}
+
+.bg-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, .8)), url("../images/chocolate-gemini.png");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    font-size: 2.1em;
+    font-family: 'Source Code Pro';
+    color: $white;
+}
+
+%gradient {
+    background: $primary;  
+    background: -webkit-linear-gradient(to right, $secondary, $primary); 
+    background: linear-gradient(to right, $secondary, $primary); 
+}
+
+.highlighter {
+    @extend %gradient;
+    -webkit-text-fill-color: transparent;
+    -webkit-column-rule-color: transparent;
+    -webkit-background-clip: text;
+    padding-bottom: 25px;
+    padding-top: 25px;
+}
+
+.bottom-content {
+    position: absolute;
+    bottom: 0;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}

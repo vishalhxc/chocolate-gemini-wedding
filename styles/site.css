@@ -7763,18 +7763,31 @@ body, html {
   height: 100%; }
 
 .bg-image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../chocolate-gemini.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8)), url("../images/chocolate-gemini.png");
   height: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover; }
 
 h1 {
-  font-size: 3em;
+  font-size: 2.1em;
   font-family: 'Source Code Pro';
   color: #FFFFFF; }
 
-h2 {
-  font-size: 1.4em;
-  font-family: 'Source Sans Pro', sans-serif;
-  color: #FFFFFF; }
+.highlighter {
+  background: #9f98e8;
+  background: -webkit-linear-gradient(to right, #aff6cf, #9f98e8);
+  background: linear-gradient(to right, #aff6cf, #9f98e8); }
+
+.highlighter {
+  -webkit-text-fill-color: transparent;
+  -webkit-column-rule-color: transparent;
+  -webkit-background-clip: text;
+  padding-bottom: 25px;
+  padding-top: 25px; }
+
+.bottom-content {
+  position: absolute;
+  bottom: 0;
+  padding-left: 10px;
+  padding-bottom: 10px; }
