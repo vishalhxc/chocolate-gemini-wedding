@@ -1,0 +1,58 @@
+$white: #FFFFFF;
+$black: #1f1f1f;
+
+$primary: #673147;
+$secondary: #dc7633;
+$tertiary: #50c878;
+$highlight: #ffdb58;
+
+$link: $secondary;
+
+@import "../node_modules/bulma/bulma.sass";
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&family=Source+Sans+Pro:ital@1&display=swap');
+
+%gradient {
+    background: $primary;
+    background: linear-gradient(232deg, $highlight 0%, $tertiary 28%, $secondary 62%, $primary 100%);
+}
+
+body, html {
+    height: 100%;
+}
+
+.bg-image {
+    height: 100%;
+    background-image: linear-gradient(25deg, rgba($highlight, 0.7) 0%, rgba($tertiary, 0.7) 28%, rgba($secondary, 0.7) 62%, rgba($primary, 0.7) 100%), url("../images/chocolate-gemini-bw.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.navbar {
+    height: 80px;
+    background-color: transparent;
+    border: none;
+    color: white;
+    z-index: 100;
+    transition: background-color 1s ease 0s;
+
+    .button:hover { background-color: $primary; }
+    .navbar-item { color: $white; }
+    .brand:hover { color: $white; }
+    .our-story:hover { color: $primary; }
+    .besties:hover { color: $secondary; }
+    .guestbook:hover { color: $tertiary; }
+    .registry:hover { color: $highlight; }
+}
+
+.highlighter { 
+    @extend %gradient;
+    -webkit-text-fill-color: transparent;
+    -webkit-column-rule-color: transparent;
+    -webkit-background-clip: text;
+}
+
+h1 { 
+    font-size: 2.1em;
+    font-family: 'Source Code Pro';
+}
