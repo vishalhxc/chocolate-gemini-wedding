@@ -7765,6 +7765,8 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
 
 body, html {
   height: 100%; }
+  body #root, html #root {
+    height: 100%; }
 
 .bg-image {
   height: 100%;
